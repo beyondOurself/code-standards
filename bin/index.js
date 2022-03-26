@@ -4,7 +4,10 @@ import chalk from 'chalk'
 import fs from 'fs'
 import questions from './questions/index.js';
 import createPackageTemplate from './createPackageTemplate.js'
-import { copyDir} from './utils/index.js'
+import { copyDir } from './utils/index.js'
+import path from 'path'
+import { fileURLToPath } from 'url'
+const __dirname = fileURLToPath(import.meta.url)
 const inputConfig = await questions()
 const getRootPath =  ()=>{
     return `./${inputConfig.name}` || 'project'
@@ -14,7 +17,7 @@ console.log(chalk.blue("创建项目"))
 //拷贝 doc目录
 fs.mkdirSync(rootPath)
 console.log(chalk.blue("加载文件"))
-copyDir('./bin/project', `${rootPath}`, err => {
+await copyDir(path.resolve(__dirname, '../project'), `${rootPath}`, err => {
     if (err) {
         console.log(chalk.red("拷贝doc目录异常"), err)
     }
