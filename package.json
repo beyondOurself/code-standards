@@ -13,8 +13,6 @@
   ],
   "type": "module",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
     "test": "rimraf longlong && node ./bin/index.js",
     "clean": "rimraf longlong"
   },
