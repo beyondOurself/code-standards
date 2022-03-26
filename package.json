@@ -1,17 +1,21 @@
 {
   "name": "lg-docs-cli",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
-  "bin":"./index.js",
   "directories": {
     "doc": "docs"
   },
+  "bin": "./bin/index.js",
+  "files": [
+    "bin",
+    "package.json"
+  ],
   "type": "module",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "test": "rimraf longlong && node index.js",
+    "test": "rimraf longlong && node ./bin/index.js",
     "clean": "rimraf longlong"
   },
   "keywords": [],
