@@ -10,7 +10,7 @@ lastUpdated: true
 contributors: true
 actions:
   - text: 立即查看
-    link: /zh/guide/getting-started.html
+    link: /get-started/
     type: primary
 # features:
 #   - title: HTML规范
