@@ -75,6 +75,15 @@ module.exports = {
                         link:'http://tgideas.qq.com/doc/index.html'
                     },
                     {
+                        text: '阿里前端规范',
+                        link:'https://developer.aliyun.com/article/850913'
+                        
+                    },
+                    {
+                        text: '网易NEC代码规范',
+                        link:'http://nec.netease.com/standard'
+                    },
+                    {
                         text: '百度前端代码规范',
                         link:'https://github.com/ecomfe/spec'
                     },
@@ -164,10 +173,9 @@ module.exports = {
             {
                 text: 'CSS规范',
                 children: [
-                    // SidebarItem
-                    {
+                     {
                         text: '代码规范',
-                        link: '',
+                        link: '/css-stantdards/',
                     },
                     {
                         text: '注释规范',
@@ -176,6 +184,10 @@ module.exports = {
                     {
                         text: 'SASS规范',
                         link: '',
+                    },
+                    {
+                        text: 'LESS规范',
+                        link: '/css-standards/less.md',
                     },
                     {
                         text: '重置样式',
@@ -188,7 +200,7 @@ module.exports = {
                     {
                         text: '移动端常用私有属性',
                         link: '',
-                    },
+                    }
                 ],
             },
             {
@@ -196,8 +208,8 @@ module.exports = {
                 children: [
                     // SidebarItem
                     {
-                        text: '目录命名',
-                        link: '',
+                        text: '目录或文件命名',
+                        link: '/name-stantdards/',
                     },
                     {
                         text: '图片命名',
@@ -219,7 +231,7 @@ module.exports = {
                     // SidebarItem
                     {
                         text: '语言规范',
-                        link: '',
+                        link: '/js-standards/',
                     },
                     {
                         text: '代码规范',
@@ -247,11 +259,11 @@ module.exports = {
                     // SidebarItem
                     {
                         text: '语言规范',
-                        link: '',
+                        link: '/vue-standards/',
                     },
                     {
-                        text: '代码规范',
-                        link: '',
+                        text: 'Vue 项目目录规范',
+                        link: '/vue-standards/directory.md',
                     },
                 ],
             },
@@ -280,4 +292,9 @@ module.exports = {
             },
         ]
     ],
+    extendsMarkdown: (md, app) => {
+        // console.log(md)
+        // md.use(plugin1)
+        // md.linkify.set({ fuzzyEmail: false })
+    },
 }

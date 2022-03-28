@@ -1,6 +1,6 @@
 ---
 home: true
-tagline: 前端编码规范
+tagline: 规范的目的是为了编写高质量的代码,让你的团队成员每天的心情都是愉快的，大家在一起都是快乐的。
 heroImage: loong.png
 heroText: Front-End Coding Guidelines
 heroAlt: loong
