@@ -132,15 +132,15 @@ module.exports = {
                     },
                     {
                         text: '注释规范',
-                        link: '',
+                        link: '/html-standards/annotation.md',
                     },
                     {
-                        text: '文本规范',
-                        link: '',
+                        text: '文件模板',
+                        link: '/html-standards/template.md',
                     },
                     {
                         text: 'WebAppMeta',
-                        link: '',
+                        link: '/html-standards/webapp.md',
                     },
                 ],
             },
@@ -150,23 +150,19 @@ module.exports = {
                     // SidebarItem
                     {
                         text: '图片格式',
-                        link: '',
+                        link: '/image-standards/format.md',
                     },
                     {
                         text: '图片大小',
-                        link: '',
+                        link: '/image-standards/size.md',
                     },
                     {
                         text: '图片质量',
-                        link: '',
-                    },
-                    {
-                        text: '概述',
-                        link: '',
+                        link: '/image-standards/quality.md',
                     },
                     {
                         text: '图片引入',
-                        link: '',
+                        link: '/image-standards/import.md',
                     },
                 ],
             },
@@ -179,11 +175,11 @@ module.exports = {
                     },
                     {
                         text: '注释规范',
-                        link: '',
+                        link: '/css-stantdards/note.md',
                     },
                     {
                         text: 'SASS规范',
-                        link: '',
+                        link: '/css-stantdards/sass.md',
                     },
                     {
                         text: 'LESS规范',
@@ -191,15 +187,15 @@ module.exports = {
                     },
                     {
                         text: '重置样式',
-                        link: '',
+                        link: '/css-stantdards/reset.md',
                     },
                     {
                         text: '媒体查询',
-                        link: '',
+                        link: '/css-stantdards/query.md',
                     },
                     {
                         text: '移动端常用私有属性',
-                        link: '',
+                        link: '/css-stantdards/webkit.md',
                     }
                 ],
             },
