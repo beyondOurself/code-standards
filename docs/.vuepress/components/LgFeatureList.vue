@@ -1,8 +1,8 @@
 <template>
   <div class="lg-features-component_wrap">
-    <template v-for="({icon,title,content},index) in featureList" :key="index">
+    <template v-for="({icon,title,content,link},index) in featureList" :key="index">
        <div class="feature-item" > 
-       <RouterLink to="/css-standards/">
+       <RouterLink :to="link">
 
         <LgFeatureItem>
           <template #icon>
