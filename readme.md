@@ -5,3 +5,7 @@
 # 技术
 * 项目使用 vue 官方文档构建工具 vuepress;
 *  GitHub Actions  实现自动部署自己的静态文档站;
+
+# 文档链接
+
+https://beyondourself.github.io/code-standards/
