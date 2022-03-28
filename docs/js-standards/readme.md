@@ -1,6 +1,6 @@
 # JavaScript 规范
 
-> 啊里前端开发手册；
+> 阿里前端开发手册；
 
 # 概览 :clipboard:
 
