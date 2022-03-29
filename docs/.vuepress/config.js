@@ -171,15 +171,15 @@ module.exports = {
                 children: [
                      {
                         text: '代码规范',
-                        link: '/css-stantdards/',
+                        link: '/css-standards/',
                     },
                     {
                         text: '注释规范',
-                        link: '/css-stantdards/note.md',
+                        link: '/css-standards/note.md',
                     },
                     {
                         text: 'SASS规范',
-                        link: '/css-stantdards/sass.md',
+                        link: '/css-standards/sass.md',
                     },
                     {
                         text: 'LESS规范',
@@ -187,15 +187,15 @@ module.exports = {
                     },
                     {
                         text: '重置样式',
-                        link: '/css-stantdards/reset.md',
+                        link: '/css-standards/reset.md',
                     },
                     {
                         text: '媒体查询',
-                        link: '/css-stantdards/query.md',
+                        link: '/css-standards/query.md',
                     },
                     {
                         text: '移动端常用私有属性',
-                        link: '/css-stantdards/webkit.md',
+                        link: '/css-standards/webkit.md',
                     }
                 ],
             },
@@ -209,15 +209,15 @@ module.exports = {
                     },
                     {
                         text: '图片命名',
-                        link: '',
+                        link: '/name-stantdards/image.md',
                     },
                     {
                         text: 'HTML/CSS命名',
-                        link: '',
+                        link: '/name-stantdards/htmlcss.md',
                     },
                     {
                         text: 'ClassName命名',
-                        link: '',
+                        link: '/name-stantdards/classname.md',
                     },
                 ],
             },
@@ -231,7 +231,7 @@ module.exports = {
                     },
                     {
                         text: '代码规范',
-                        link: '',
+                        link: '/js-standards/code',
                     },
                 ],
             },
