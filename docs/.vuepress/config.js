@@ -263,6 +263,28 @@ module.exports = {
                     },
                 ],
             },
+            {
+                text: '自定义规范方案',
+                children: [
+                    // SidebarItem
+                    {
+                        text: '参考方案',
+                        link: '/self-standards/',
+                    },
+                    {
+                        text: 'React Eslint',
+                        link: '/self-standards/react.md',
+                    },
+                    {
+                        text: 'Vue Eslint',
+                        link: '/self-standards/vue.md',
+                    },
+                    {
+                        text: 'Base Eslint',
+                        link: '/self-standards/base.md',
+                    },
+                ],
+            },
         ],
 
       
