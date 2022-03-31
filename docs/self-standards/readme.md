@@ -1,5 +1,5 @@
 # 自定义
-> xxx开发手册 
+> 
 # 概览 :clipboard:
  
 [[toc]]
@@ -7,11 +7,73 @@
 # 内容 :japanese_ogre:
 
 
-# prettier
+## 基准方案
+
+
+### 安装
+
+#### 基础包
 
 ```js
+
+pnpm  add -D prettier  eslint  eslint-config-prettier eslint-plugin-prettier husky lint-staged eslint-config-airbnb-base  eslint-plugin-import
+
+```
+
+
+
+
+### 自动化 
+
+
+#### 
+
+
+* 配置命名，执行 parepare 生成 husky 
+
+:::: code-group
+::: code-group-item package.json
+```js
+{
+  "scripts": {
+    "prepare": "husky install"
+  }
+}
+```
+:::
+::::
+
+* 执行以下命令, 生成 git hooks pre-commit
+
+```js
+npx husky add .husky/pre-commit "npx lint-staged"
+```
+
+*  在package.json  配置 lint-staged
+
+:::: code-group
+::: code-group-item package.json
+```js
+  "lint-staged": {
+    "src/**": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+```
+:::
+::::
+
+
+### 基础配置 
+
+####  prettier  配置
+
+:::: code-group
+::: code-group-item .prettierrc.js
+```js
 module.exports = {
-  printWidth: 120, //一行的字符数，如果超过会进行换行，默认为80,最大行长规则通常设置为100或120
+    printWidth: 120, //一行的字符数，如果超过会进行换行，默认为80,最大行长规则通常设置为100或120
     tabWidth: 4, //一个tab代表几个空格数，默认为2 
     useTabs: false, // 用制表符来做缩进 默认 false 
     semi: false, // 是否打印分号 默认 true 
@@ -30,32 +92,138 @@ module.exports = {
     endOfLine: 'lf', // 行结束符  默认 lf  可选 lf|crlf|cr|auto
     embeddedLanguageFormatting:'auto', // 是否格式化嵌入的代码 默认 auton 可选 auto | off
 }
+```
+:::
+::::
+
+#### eslint 配置命名
+
+:::: code-group
+::: code-group-item .eslintrc.js
+```js
+module.exports = {
+  root: true,
+  parserOptions: {
+    sourceType: 'module'
+  },
+  env: {
+    browser: true,
+    node: true,
+    es6: true,
+  },
+  // xxx 配置具体平台  例如:  "plugin:react/recommended",
+  extends: ['airbnb-base', 'xxx', 'plugin:prettier/recommended'],
+  plugins: ["prettier"],
+  rules: {
+    "prettier/prettier": "error" // 开启规则
+  }
+}
+```
+:::
+::::
+
+
+####  eslint 忽略文件配置 
+
+:::: code-group
+::: code-group-item .eslintignore
+```js
+build/*.js
+src/assets
+public
+dist
+node_modules
+```
+:::
+::::
+
+
+####  Vue  或  React 
+
+```js
+eslint-plugin-react
+```
+
+* react eslint 配置 
+
+:::: code-group
+::: code-group-item eslintrc.js
+```js
+  "extends": [
+        "plugin:react/recommended",
+    ],
+     "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+    ],
+```
+:::
+::::
+
+
+
+```js
+ eslint-plugin-vue
+```
+
+
+* vue eslint 配置 
+
+:::: code-group
+::: code-group-item eslintrc.js
+```js
+  "extends": [
+        "plugin:vue/recommended",
+    ],
+    "plugins": [
+        "vue",
+    ],
+```
+:::
+::::
+
+
+## eslint 参考方案
+
+###  Javascript Style 
+
+#### 方案1
+
+```js
+eslint-config-o2team
+
+```
+
+#### 方案2
+```js
+eslint-config-airbnb-base
+
+```
+
+###  vue
+
+#### 方案1
+
+```js
+eslint-config-airbnb-base + eslint-plugin-vue
 
 ```
 
 
-# eslint
-
-##  Javascript Style 
-
-### 方案1
-
-eslint-config-o2team
-
-### 方案2
-
-eslint-config-airbnb-base
-
-##  vue
-
-### 方案1
-
-eslint-config-airbnb-base + eslint-plugin-vue
-
-##  react
+###  react
 
 
-### 方案1
+#### 方案1
 
-eslint-config-airbnb
+* 已经包含react
+```js
+eslint-config-airbnb 
+```
+
 
