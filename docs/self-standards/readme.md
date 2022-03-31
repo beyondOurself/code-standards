@@ -49,23 +49,28 @@ pnpm  add -D prettier  eslint  eslint-config-prettier eslint-plugin-prettier hus
 npx husky add .husky/pre-commit "npx lint-staged"
 ```
 
-*  在package.json  配置 lint-staged
+
+
+
+### 基础配置 
+
+### lint-staged 配置具体平台
+
+*  新增文件 lint-staged.config.js 进行配置
 
 :::: code-group
-::: code-group-item package.json
+::: code-group-item lint-staged.config.js
 ```js
-  "lint-staged": {
+  module.exports = {
     "src/**": [
-      "eslint --fix",
-      "git add"
+        "eslint --fix",
+        "git add"
     ]
-  },
+}
 ```
 :::
 ::::
 
-
-### 基础配置 
 
 ####  prettier  配置
 
