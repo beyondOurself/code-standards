@@ -41,4 +41,10 @@ export default [
         title: `Vue 规范`,
         content: ` 参考vue官方文档的最佳实践，规范类 Vue 应用书写。`
     },
+    {
+        icon: `wpf:define-location`,
+        link:`/self-standards/`,
+        title: `项目规范方案`,
+        content: `结合 prettier eslint 实现 git 提交自动化格式`
+    },
 ]
