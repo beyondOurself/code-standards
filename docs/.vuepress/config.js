@@ -241,11 +241,11 @@ module.exports = {
                     // SidebarItem
                     {
                         text: '语言规范',
-                        link: '',
+                        link: '/react-standards/',
                     },
                     {
                         text: '代码规范',
-                        link: '',
+                        link: '/react-standards/directory.md',
                     },
                 ],
             },
