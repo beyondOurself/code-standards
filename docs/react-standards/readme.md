@@ -137,12 +137,13 @@ React DOM 使用小驼峰式命名法来定义属性的名称，而不使用 HTM
 ```
 
 * 不要在 JSX 的花括号里边加空格，eslint: react/jsx-curly-spacing
-
+```js
 // bad
 <Foo bar={ baz } />
 
 // good
 <Foo bar={baz} />
+```
 
 ## 引号
 
