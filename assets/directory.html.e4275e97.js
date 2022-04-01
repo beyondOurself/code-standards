@@ -1,0 +1,1 @@
+const t={key:"v-1645962c",path:"/react-standards/directory.html",title:"React \u9879\u76EE\u76EE\u5F55\u89C4\u8303",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1648485378e3,contributors:[{name:"canlong.shen",email:"562172151@qq.com",commits:2}]},filePathRelative:"react-standards/directory.md"};export{t as data};

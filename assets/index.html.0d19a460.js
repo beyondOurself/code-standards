@@ -1,0 +1,1 @@
+const e={key:"v-69fb3e44",path:"/image-standards/",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1648302532e3,contributors:[{name:"canlong.shen",email:"562172151@qq.com",commits:1}]},filePathRelative:"image-standards/readme.md"};export{e as data};
