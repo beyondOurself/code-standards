@@ -4,7 +4,7 @@ module.exports = {
     lang: 'zh-CN',
     title: '文档',
     description: '前端编码规范',
-    base:'/code-standards/',
+    base:'./',
     // 主题和它的配置
     theme: path.resolve(__dirname, './theme'),
     themeConfig: {
