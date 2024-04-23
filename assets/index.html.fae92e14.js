@@ -1,0 +1,1 @@
+import{b as o,o as t,f as r}from"./app.ba3fd69d.js";import{_ as n}from"./plugin-vue_export-helper.21dcd24c.js";const c={};function s(a,_){const e=o("LgFeatureList");return t(),r(e)}var i=n(c,[["render",s]]);export{i as default};

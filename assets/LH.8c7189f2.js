@@ -1,0 +1,1 @@
+import{o as t,c as _,r}from"./app.ba3fd69d.js";import{_ as s}from"./plugin-vue_export-helper.21dcd24c.js";const o={},a={class:"lg-highlight"};function n(e,c){return t(),_("span",a,[r(e.$slots,"default",{},void 0,!0)])}var f=s(o,[["render",n],["__scopeId","data-v-33888917"]]);export{f as default};

@@ -1,0 +1,1 @@
+const t={key:"v-53603f7e",path:"/image-standards/quality.html",title:"\u56FE\u7247\u8D28\u91CF",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1648485263e3,contributors:[{name:"canlong.shen",email:"562172151@qq.com",commits:1}]},filePathRelative:"image-standards/quality.md"};export{t as data};
